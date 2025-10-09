@@ -141,6 +141,7 @@ nav .right a span {
   margin: 10px;
   border: 1.5px solid #d3d3d3;
   border-radius: 5px;
+  box-shadow: 10px 5px 5px #818080;
 }
 
 .skills-section .cells .cell img {
