@@ -1,9 +1,12 @@
+/* ===================== THEME TOKENS ===================== */
 :root {
-  --text-color: #1a1c20;
-  --link-color: #4a76ee;
-  --background-color: #eeeff1;
+  --text-color: #1a1c20;       /* Primary text color: high contrast on light bg for readability. */
+  --link-color: #4a76ee;       /* Accent/link color: used for anchors, outlines, and buttons. */
+  --background-color: #f9f9f9; /* Neutral light page background to give cards slight contrast. */
+  --color-white: #ffffff;
 }
 
+/* ===================== RESET & BASE LAYOUT ===================== */
 * {
   margin: 0;
   padding: 0;
@@ -15,25 +18,29 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif; 
   color: var(--text-color);
-  background-color: var(--background-color);
-  max-width: 1400px;
-  margin: 0 auto;
+  background-color: var(--color-white);
+  margin: 0 auto;                     
 }
+
+.content {
+  max-width: 1200px; 
+  margin: 0 auto;
+  display: block; 
+}
+
 
 a {
   color: var(--link-color);
   text-decoration: none;
 }
 
-/* NAVBAR */
+/* ===================== NAVBAR ===================== */
 nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 0 50px;
+  justify-content: space-between; 
+  padding: 0 50px;                
   height: 80px;
 }
 
@@ -59,59 +66,83 @@ nav .right a span {
   margin-left: 5px;
 }
 
-/* SECTION 1: Hero */
+/* ===================== SECTION: HERO ===================== */
 .hero-section {
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+}
+
+.hero-section .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
-  margin: 50px 0;
-  margin-bottom: 100px;
+  padding: 100px 50px;
+  margin: 0 auto;
   gap: 40px;
 }
 
-.hero-section .text {
+.hero-section .content .text {
   flex: 5;
 }
 
-.hero-section .text h2 {
+.hero-section .content .text h2 {
   font-size: 45px;
 }
 
-.hero-section .text .links {
-  margin-top: 25px;
+.hero-section .content .text .links {
+  margin-top: 10px;
 }
 
-.hero-section .text .links a {
+.hero-section .content .text .links a {
   display: inline-block;
   padding: 5px 10px;
   border: 2px solid var(--link-color);
   border-radius: 5px;
   margin-right: 10px;
-  margin-bottom: 10px;
-  transition: .1s;
+  margin-bottom: 10px; 
+  transition: .1s;     
 }
 
-.hero-section .text .links a:hover {
+.hero-section .content .text .links a:hover {
   color: var(--text-color);
   border: 2px solid var(--text-color);
 }
 
-.hero-section .headshot {
+.hero-section .content .headshot {
   flex: 2;
   display: flex;
   justify-content: right;
 }
 
-.hero-section .headshot img {
-  width: 350px;
-  border-radius: 50%;
+.hero-section .content .headshot .photo {
+  width: 350px;                 
+  height: 350px;
+  border-radius: 50%;           
+  background-image: url('./images/hero-headshot.png'); 
+  background-position: center top;
+  background-size: cover;       
+  background-position: center;  
+  border: 3px solid #fff;       
+  box-shadow: 0 0 8px rgba(0,0,0,0.2); 
 }
 
-/* SECTION 2: Skills */
+.hero-section .content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  letter-spacing: 0.3px;
+  padding: 30px 0px;
+}
+/* ===================== SECTION: SKILLS ===================== */
+
 .skills-section {
-  padding: 0 50px;
-  margin-bottom: 100px;
+  background-color: var(--background-color);
+}
+
+.skills-section .content {
+  padding: 100px 50px;
+  margin: 0 auto;
 }
 
 .skills-section h2 {
@@ -147,17 +178,17 @@ nav .right a span {
   width: 30px;
   height: 30px;
   object-fit: contain;
-  border-radius: 2px;
+  border-radius: 2px; 
 }
 
 .skills-section .cells .cell span {
   font-size: 18px;
 }
 
-/* SECTION 3: Contact */
-.contact-section {
-  padding: 0 50px;
-  margin-bottom: 100px;
+/* ===================== SECTION: CONTACT ===================== */
+.contact-section .content {
+  padding: 100px 50px;
+  margin: 0 auto;
 }
 
 .contact-section h2 {
@@ -180,6 +211,10 @@ nav .right a span {
   flex-direction: column;
 }
 
+.contact-section .group form label {
+  margin-bottom: 10px;
+}
+
 .contact-section .group form input,
 .contact-section .group form textarea {
   font-family: 'Poppins', sans-serif;
@@ -187,8 +222,8 @@ nav .right a span {
   background-color: transparent;
   padding: 10px;
   margin-bottom: 15px;
-  outline: none;
-  resize: none;
+  outline: none;  
+  resize: none;   
 }
 
 .contact-section .group form button {
@@ -206,16 +241,15 @@ nav .right a span {
   filter: brightness(.9);
 }
 
+/* ===================== RESPONSIVE TWEAKS ===================== */
 @media (max-width: 850px) {
-  /* SECTION 1: Hero */
   .hero-section .text h2 {
     font-size: 35px;
   }
 }
 
 @media (max-width: 740px) {
-  /* SECTION 1: Hero */
-  .hero-section {
+  .hero-section .content {
     flex-direction: column-reverse;
   }
 
@@ -223,14 +257,12 @@ nav .right a span {
     width: 300px;
   }
 
-  /* SECTION 3: Contact */
   .contact-section .group {
     flex-direction: column;
   }
 }
 
 @media (max-width: 600px) {
-  /* NAVBAR */
   nav {
     padding: 0 20px;
   }
@@ -249,8 +281,7 @@ nav .right a span {
     display: none;
   }
 
-  /* SECTION 1: Hero */
-  .hero-section {
+  .hero-section .content {
     padding: 0 20px;
   }
 
@@ -258,8 +289,7 @@ nav .right a span {
     font-size: 30px;
   }
 
-  /* SECTION 2: Skills */
-  .skills-section {
+  .skills-section .content {
     padding: 0 20px;
   }
 
@@ -267,19 +297,11 @@ nav .right a span {
     font-size: 16px;
   }
 
-
-  /* SECTION 3: Contact */
-  .contact-section {
+  .contact-section .content {
     padding: 0 20px;
   }
 }
 
-
-/*Portfolio Grid*/
-
-.boxes{
-  display: grid;
-  grid-template-columns: repeat(2,65%);
-  grid-template-rows: 200px 200px;
-  justify-content: center;
+@view-transition {
+  navigation: auto;
 }

@@ -1,0 +1,113 @@
+/* ===== Projects section layout and spacing ===== */
+.projects-section {
+  padding: 0 40px;         
+  margin-bottom: 60px;     
+}
+
+.projects-section .intro {
+  margin-bottom: 35px;     
+  text-align: center;      
+}
+
+.projects-section h2 {
+  margin-bottom: 12px;     
+}
+
+/* ===== Grid wrapper ===== */
+.projects-grid {
+  display: flex;           
+  justify-content: center; 
+  
+}
+
+/* ===== Individual project card ===== */
+.project-card {
+  width: 360px;               
+  border: 1.5px solid #d3d3d3;
+  border-radius: 8px;         
+  background: #fff;         
+  overflow: hidden;           
+  transition:                 
+    transform .15s ease,
+    box-shadow .15s ease;
+}
+
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+}
+
+/* ===== Thumbnail image ===== */
+.project-card .thumb img {
+  width: 100%;              
+  height: 200px;            
+  object-fit: cover;        
+  display: block;           
+}
+
+/* ===== Card content ===== */
+.project-card .content {
+  padding: 14px;            
+}
+
+.project-card .title {
+  font-size: 20px;          
+  margin-bottom: 6px;       
+}
+
+.project-card .desc {
+  font-size: 14px;          
+  color: #555;              
+  margin-bottom: 8px;       
+}
+
+/* ===== Tech tags (chips) ===== */
+.project-card .tags {
+  list-style: none;         
+  display: flex;            
+  flex-wrap: wrap;          
+  gap: 6px;                 
+}
+
+.project-card .tags li {
+  font-size: 11px;          
+  padding: 3px 7px;         
+  border: 1px solid #ddd;  
+  border-radius: 999px;     
+  background: #fafafa;      
+}
+
+.read-more-btn {
+  display: block;
+  margin: 14px auto 0;      
+  padding: 8px 18px;
+  background-color: #4b6bfb;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  width: fit-content;       
+}
+
+.read-more-btn:hover {
+  background-color: #3a55d1;
+  transform: translateY(-2px);
+}
+
+
+/* ===== Responsive tweaks ===== */
+
+@media (max-width: 600px) {
+  .project-card {
+    width: 100%;            
+    max-width: 320px;       
+  }
+
+  .project-card .thumb img {
+    height: 160px;          
+  }
+}

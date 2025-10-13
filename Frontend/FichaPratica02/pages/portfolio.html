@@ -1,95 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <!-- Ensures proper scaling on mobile and correct viewport width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+  <!-- ========== Fonts and Icons ========== -->
+  <!-- Preconnect helps browsers fetch Google Fonts faster -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Load two main font families (Poppins + Roboto Condensed) -->
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" 
+    rel="stylesheet"
+  >
 
-    <link rel="stylesheet" href="../styles.css ">
+  <!-- Load Font Awesome for icons (GitHub, LinkedIn, Email) -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"
+  >
 
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
-    <title>José Vaz Pinho</title>
+  <!-- ========== Stylesheets ========== -->
+  <!-- Global styles for site-wide layout and theme -->
+  <link rel="stylesheet" href="../styles.css">
 
+  <!-- Page-specific styles for this portfolio page -->
+  <link rel="stylesheet" href="../pages/portfolio.css">
 
+  <!-- Favicon (small icon on browser tab) -->
+  <link rel="icon" type="image/x-icon" href="../images/favicon.png">
 
+  <title>Portfolio – José Vaz Pinho</title>
 </head>
 
 <body>
-    <!--NAVBAR-->
-    <nav>
-        <div class="left">
-            <a href="#">José Vaz Pinho</a>
-        </div>
-        <div class="right">
-            <a href="https://github.com/josepinho22" target="_blank" rel="no-opener no-referrer">
-                <i class="fa-brands fa-github"></i>
-                <span>Github</span>
-            </a>
+  <!-- ========== NAVIGATION BAR ========== -->
+  <!-- Semantic <nav> helps users and search engines identify main site navigation -->
+  <nav>
+    <!-- Left side: brand / home link -->
+    <div class="left">
+      <!-- Link to homepage -->
+      <a href="../index.html">José Vaz Pinho</a>
+    </div>
 
-            <a href="https://www.linkedin.com/in/josé-pinho-a71834293" target="_blank" rel="no-opener no-referrer">
-                <i class="fa-brands fa-square-linkedin"></i>
-                <span>Linkedin</span>
-            </a>
+    <!-- Right side: external profile and contact links -->
+    <div class="right">
+      <!-- Each link uses target="_blank" to open in a new tab -->
+      <!-- rel="noopener noreferrer" improves security and privacy -->
 
-            <a href="mailto:pinho.jose251@gmail.com" target="_blank" rel="no-opener no-referrer">
-                <i class="fa-solid fa-envelope"></i>
-                <span>Email</span>
-            </a>
+      <!-- GitHub -->
+      <a href="https://github.com/josepinho22" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
+        <span>Github</span>
+      </a>
 
-        </div>
-    </nav>
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/josé-pinho-a71834293" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-square-linkedin" aria-hidden="true"></i>
+        <span>Linkedin</span>
+      </a>
 
-    <main>
-        <section id="skills" class="skills-section">
-            <h2>Skills</h2>
+      <!-- Email -->
+      <a href="mailto:pinho.jose251@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </nav>
 
+  <!-- ========== MAIN CONTENT ========== -->
+  <main>
+    <!-- Projects section (main focus of the page) -->
+    <section id="projects" class="projects-section">
+      <!-- Section heading -->
+      <h2>Projects</h2>
 
-            <div class="text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut tempora harum fugiat, eveniet ea quam
-                distinctio
-                rem corporis? Totam nostrum, suscipit beatae sequi amet ut quas incidunt quis unde! Veniam.
-            </div>
+      <!-- Short introduction -->
+      <p class="intro">Some things I’ve built. Click a card to see screenshots.</p>
 
+      <!-- List of project cards -->
+      <ul class="projects-grid" role="list">
+        
+        <!-- ===== Single Project Card ===== -->
+        <!-- Each project is one <li> with image, description, and tags -->
+        <li class="project-card" data-tags="HTML,CSS,JavaScript,Vue">
+          
+          <!-- Clickable thumbnail (links to the project details page) -->
+          <a class="thumb" href="projects/confessional.html" aria-label="Open project: Confessional">
+            <!-- Thumbnail image with lazy loading for performance -->
+            <img 
+              src="../images/projects/confessional-landing.png" 
+              alt="Confessional project thumbnail" 
+              loading="lazy" 
+              width="640" height="400"
+            >
+          </a>
 
-            <div class="boxes">
+          <!-- Card content below the image -->
+          <div class="content">
+            <!-- Project title -->
+            <h3 class="title">
+              <a href="projects/confessional.html">Confessional</a>
+            </h3>
 
-                <div class="project">
-                    <img src="/Frontend/FichaPratica02/images/" alt="html logo">
-                    <span>HTML</span>
-                </div>
+            <!-- Short project description -->
+            <p class="desc">
+              Anonymous confessions app with a minimalist UI and smooth interactions.
+            </p>
 
-                <div class="project">
-                    <img src="/Frontend/FichaPratica02/images/" alt="css logo">
-                    <span>CSS</span>
-                </div>
+            <!-- Tech stack tags (helps future filtering) -->
+            <ul class="tags" role="list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Vue</li>
+            </ul>
 
-                <div class="project">
-                    <img src="/Frontend/FichaPratica02/images/" alt="javascript logo">
-                    <span>JavaScript</span>
-                </div>
+            <!-- Read more link -->
+            <a href="projects/confessional.html" class="read-more-btn">Read More</a>
+          </div>
+        </li>
+        <!-- ===== /End Project Card ===== -->
 
-                <div class="project">
-                    <img src="/Frontend/FichaPratica02/images/" alt="java logo">
-                    <span>Java</span>
-                </div>
-
-                <div class="project">
-                    <img src="/Frontend/FichaPratica02/images/" alt="vue logo">
-                    <span>Vue</span>
-                </div>
-            </div>
-        </section>
-    </main>
+      </ul>
+    </section>
+  </main>
 </body>
-
 </html>

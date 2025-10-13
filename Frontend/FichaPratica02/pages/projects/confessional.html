@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ========== Fonts and Icons ========== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" 
+    rel="stylesheet"
+  >
+
+  <link 
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer"
+  >
+
+  <!-- ========== Stylesheets ========== -->
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="/Frontend/FichaPratica02/pages/projects/projects.css">
+
+  <link rel="icon" type="image/x-icon" href="../../images/favicon.png">
+
+  <title>Confessional – José Vaz Pinho</title>
+
+  <style>figure { margin: 0; }</style>
+</head>
+
+<body>
+  <nav>
+    <div class="left">
+      <a href="../../index.html">José Vaz Pinho</a>
+    </div>
+
+    <div class="right">
+      <a href="https://github.com/josepinho22" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
+        <span>Github</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/josé-pinho-a71834293" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-square-linkedin" aria-hidden="true"></i>
+        <span>Linkedin</span>
+      </a>
+
+      <a href="mailto:pinho.jose251@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="project">
+    <h1 class="project__title">Confessional</h1>
+    <p class="project__lede">
+      Short description of the project goes here. Tools used, goals, etc.
+    </p>
+
+    <!-- ========== IMAGE SLIDER ========== -->
+    <section class="cq-slider" aria-label="Project images">
+      <input type="radio" name="slide" id="s1" checked hidden>
+      <input type="radio" name="slide" id="s2" hidden>
+      <input type="radio" name="slide" id="s3" hidden>
+      <input type="radio" name="slide" id="s4" hidden>
+
+      <div class="cq-frame">
+        
+        <figure class="slides" aria-live="polite">
+          <img src="../../images/projects/confessional-landing.png"     alt="Confessional – landing hero">
+          <img src="../../images/projects/confessional-confessional.png" alt="Confessional – confessional UI">
+          <img src="../../images/projects/confessional-advices.png"      alt="Confessional – advices view">
+          <img src="../../images/projects/confessional-contact.png"      alt="Confessional – contact section">
+        </figure>
+
+        <div class="arrows">
+          <!-- Loop: s1 → s2 → s3 → s4 → back to s1 -->
+          <label class="prev p1" for="s4" aria-label="Previous"></label>
+          <label class="next n1" for="s2" aria-label="Next"></label>
+
+          <label class="prev p2" for="s1" aria-label="Previous"></label>
+          <label class="next n2" for="s3" aria-label="Next"></label>
+
+          <label class="prev p3" for="s2" aria-label="Previous"></label>
+          <label class="next n3" for="s4" aria-label="Next"></label>
+
+          <label class="prev p4" for="s3" aria-label="Previous"></label>
+          <label class="next n4" for="s1" aria-label="Next"></label>
+        </div>
+
+        <div class="thumbs" aria-label="Select slide">
+          <label for="s1"><img src="../../images/projects/confessional-landing.png" alt="Thumbnail 1"></label>
+          <label for="s2"><img src="../../images/projects/confessional-confessional.png" alt="Thumbnail 2"></label>
+          <label for="s3"><img src="../../images/projects/confessional-advices.png" alt="Thumbnail 3"></label>
+          <label for="s4"><img src="../../images/projects/confessional-contact.png" alt="Thumbnail 4"></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECT DESCRIPTION ========== -->
+    <section class="project__body">
+      <h2>About the project</h2>
+      <p>Write case study here...</p>
+    </section>
+  </main>
+</body>
+</html>
