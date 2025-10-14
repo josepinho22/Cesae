@@ -1,0 +1,73 @@
+body { background:#111; }
+
+
+/* === NAVBAR === */
+.navbar {
+  position: absolute;               /* sits on top of hero image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;                      /* above background and text */
+  background-color: transparent !important; /* keep it transparent */
+}
+
+/* === LANDING SECTION === */
+#landing-section {
+  position: relative;               /* natural flow (not absolute!) */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;                       /* base layer */
+}
+
+/* background image sits *inside* landing section */
+#landing-section .bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+  z-index: -1;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+  z-index: 1;
+}
+
+.text h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* === CAROUSEL === */
+#carousel-section {
+  position: relative;
+  z-index: 1;      
+  margin-top: 0;   /* ensures it's right below hero */
+}
+
+#carousel-section img {
+  height: 60vh;        /* or try 400px */
+  object-fit: cover;   /* keeps proportions and crops nicely */
+}
+
+#carousel-section text {
+float: left;
+}
+
+
+#carousel-section h2 {
+text-align: center;
+color: rgb(9, 98, 68);
+padding: 10px;
+}

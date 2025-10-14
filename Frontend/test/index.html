@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ========== BOOTSTRAP CSS ========== -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Amazonia</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!--NAVBAR-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Amazura</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: end;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="landing-section">
+        <img class="bg-img img-fluid" src="./images/photo-1591081658714-f576fb7ea3ed.jpeg" alt="bg image">
+        <div class="text">
+            <h2 class="font-weight-bold">Dare To Be The Difference</h2>
+            <p>Because only by being different can we change our planet ...</p>
+        </div>
+    </section>
+
+    <section id="carousel-section" class="container my-3">
+        <h2>What Will keep Happening If We Don't Change ...</h2>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100"
+                        src="https://c.files.bbci.co.uk/1E18/production/_125840770_hi077252483.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Deforestation can cause this</h5>
+                        <p>Truly bad for our planet</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100"
+                        src="https://palotoaamazontravel.com/wp-content/uploads/2025/03/Impact-of-Deforestation-of-the-Amazon-Rainforest-on-Life3.webp"
+                        alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Deforestation can cause this</h5>
+                        <p>Truly bad for our planet 2</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100"
+                        src="https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/9A97/production/_118457593_0d3f5356-3a20-4696-bf41-674651aa38c3.jpg"
+                        alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Deforestation can cause this</h5>
+                        <p>Truly bad for our planet 3</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="services-section" class="py-5">
+        <div class="container">
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMQEBUSEBIVFhUVEhUQFRAXFxIWFRUXFRcXFxUXFRUYHyggGBolHRcXIjEhJSkrLi46FyAzODMtNygtLisBCgoKDg0OGxAQGy0mICU1Ny0vLzUtLS0tKzUtLSs1LS01LS0tLS0vKy0tLS0vLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABAUCAwYBBwj/xABDEAACAQIDBAYIBAMGBgMAAAABAgADEQQSIQUTMUEGIlFhcYEHFDJCkaGxwSNScoJiktGjssLh8PEVM2NzotJDU5P/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAMBEAAgEDAgQEBAYDAAAAAAAAAAECAxESITEEE0FRBSIy8HGRsdEUYYGh4fEzQsH/2gAMAwEAAhEDEQA/APrGMohAiLoLqk4Pp9VLYkUx7qqPNjPoe0VvkP8A1Enz7pBSzbVynnWor5ZlnpcI/Nd9meZxqtCy7o5fpTgEqY2ohb2RYr/ENLjzvLjo/gkxezFR6mV8I1V2Fr5k0BAPiB8ZzPTLEE4uqymx3j3I4+0ROm6MU9zsapU96tWWnfuBzn7zdSd1309/K5jOCtrtr7+dioVyaoU6AgD4mbTTAF73sCSNeX+c11TeoLA6c55RU1TiGBsq5QEJHHMS1u3hO56Hmp3Yw1ZWJa5sBkv48ZHr0mLXV9FFytrnh2SPsn/kkNe+9YfC3H5ycKpFS2nI6i/If1MJXEp46Mj0NiFqZJsQza1LHQ+1lAJvPcRgXp5WepYA3yknKdOZtprbnLbfGm2YX4DtI/qvlp3TKptClV40QW0uc7HhwsulpVxa6F04tb6mKUxu0AFyyrUIvoAeFz26jSelyuvLUDhc9vn3zxtBnIABue4cbDv5SPiUzgEG1+qE1J5mxsLdusmxDdloTMRjxiSqsOGUKc3VUD+BAAf8zMDhXCXvnVWNMIGsQL67sdnlK2jUAWoENwmVHYe6WYAAd9/rJWFpEnRitmALa35a6eMhLTyhz18xBr0aecsj1UubgOFK35qStrfCScFiyUKqTrcMvEHUa/ESVjMMyvVFQjPRfI4F9VvYP38r+IkGjQXVh1XBsSPkfAyy1RSTsz6J6M8exWpQc+xaov6ToftO4nzH0ZFji6hY3tSIJ4e8tp9Onh8dFKs7Hv8AATcqCuIiJyHaIiIAiIgCIiAIiIAiIgCIiAIiIBjaJ7aJNwVXrm8QgjVbH4dk43pC4/4xRt+eiT36/wC0ssFtpA3WBHIyrxFMNtmgb3DFHB8FJ+09OFJ05PTozy6lRVIpX6o+edKUtXq6cajk/wAxnYYJgdhUbcsSQf5WnJ9K1O+qEc6j/wB4md7htjer7BGduscmKK9mawsPIy2Vpq/dESjeGnZnLFcvHjeVeDr5aOY+81SofI2H0lgK6uBZhf2e+44yHTwebDrfgGemfHMTPQerueWlZNELCVTToA8c5Z/NjlH0Mt8NhWqvmBFzrbwHCRcRSCU0H5aY+d2+8n7Op9aw0uZaKstDKTykWuFx27FmpA95P+U20tq00OZcMl+2/wDlJlLo+7Lm7ryC+Byta2oF5S8JN6mrjKNtDVg6a1G9i4Vi/WNxc8LiwvOq2JsxcRepiLbunrawFyBrc8bAXkXZWzclDMRqxvbx4Sx6Z1PVsEmHp2DVmFMkdnFyPHQec5a9W7UIbt2+500KVk6k9kr/AGPmWJGdq/qyZEqOrKg06qPmvr3Amb9m1alfGVKdMEjMvWtoMos737BxvLvZGyjUrLRpWBBLNUIuFC93ZwFu+czi3XD0zTpA9YlnPAu3O/8ACDoB3X7Ldeidk9jieqvJb/wWm3ccrY6u6m6OXW4tZhlygjtFwDIWCrqLXaxtlHf2XnM1MQSbm5vw77WvqeA1/wBcJtwRdz1Lk6sadmqHKNSSFXqi1zrLwjpY0dKV3J9T696NFy1KvDrIDceOv1nfz5L6N9upTxAp1gVNQGmj2YKWuOqcwFj8eM+tTw/EIuNZ3Pc4BrkpCIicR2iIiAIiIAiIgCIiAIiIAiIgCIiAIiIB8n263qubeLlAvqb2PeSZzHRbpQKuNR303VVGF/yE2b4XPxn1L0oYtKWzqhcKSSAobmedp+ecJiglQOBax4EcjxHhPR/FOeN9up5r4XDLHV9PyPoPT3Zpo4yqFN0b8S3YTrp/rnO26WJnwalfZ9WpEDu4zlXxa4/DpWQ3dEFKoOfV0ViPDQ+U6TY18ZglohgKmH/DYH3qR4Edtvt3zdpJRl23MVJylKPyPlz1D6wG92lSeqv6j1fvLjAOyYU021LPvLnjmsDp8TIe0dmvhsRWpMOKMR4gg6dxGsktX6isO0A+Yt9pvRirHNxE2n77f2a6tmUAH3EFjodBbXylns1b1Pn9ZF2bhhUxC34dS4/aJ0uIwAV86AC3Lkf6ToyS0ONQcndHVbE2kWplWXUC15ziNfFuOVjb5CWGC2wiplZCp/MOsPiNfiJC3a7wVEdWDEKbEc+3snLThjKWlrnXWm5Rjrex1GCWxRf+oo+ALfaUvTZ82OoIeC0jUHiS39BJ4xW7ZS/Baitm/htlPyMh9NFIx2Gb3XpOl+8G/H9wnPSVq6b7M6arvw8ku6+po2Mdzh8XWHtrRUA9jPmP1yfCfMsTSLva/AG5PYBYfb5z6ci2w1enbWpSBUDm1PUr4kfSfN2QLU6xNtQbc78OPK9p3UFecn+a+n3POrO2CXZ/O/8ARC2NhPWcRkBADsKVNm9lQOsXa/Gy625sZ1W28HRwVZVwh9hRnYG5Zh7RY8ydQfG0pNi7sC7oTenWAy3utS65WIuLgXPx7phVxZa66631UaAC1xft1m6h5rt/zcitVco4xX69rGa4lbMz3tkV2FzxCnrePfx7J9p6F7SbE4NHdszrekzfmKGwY95FifGfEKtLMCvDOMh7l7vl8Z9V9FWLRsK9JT1qdU5h2hgMpB5jQjynF4lC9O9tn7/4dfhc7Vcb7r7fydtERPCPoBE8BnsAREQBERAEREAREQBERAEREAREQDVicMlVctRFZfysAR85zuK9H+z6hucOo/SSPlOniWU5LZlZQjLdHz8+i6lSc1MHXqUT+XR0PcQeUzpdEcXh3FWhVplxyAZAe0W4WPZO9iaw4mcVboZT4anN3e5xPSHYVTHoKjUjSxFMWt1WSoOwMDpz49s+ctgGoO1KqrKeSsLW5/WffJX7Z2NSxdMpVUcOq+mZT2qZvQ4zDRrT6HNxHBZq6ev1PiuEqFaqny81P9LGdfUxaqqljoRnJ8P95qxvQKujWS1Rb6OCAf3KfteU20sPUWnuagIZHy2PNTPVjOnV9LPJlCpRvkiPtLpUFP4IsR70q8L0naow3uUm/HKAfiNZU7SphCVPEG3faVNwpvmI+Z+EpOeEiYQdRH1vBbcesuVSjG1gjnKSOzNMds7QqmgoqFR6tVR93e9WzXBQPqNBxBFxpPmuC26UGgNxwINj8uEv9nV2eheovtMzEdnIfSTHCbWPxKydSmnn8Pidxs/a9KoudWvpqp4iw7O3vnKbZwRLM1NDkAykgcByBPbbn3SImEQaqWHnLrD47qBTfKug569pm0YKLujnnJytc5ZAUFjwuCDxvxFyPC3wvNmFxYPIjQjQH+XTT6S3r1QTe2pPDSXHRnoulXEbx1NIVg+QLmAewvU8R1vnp7MmpXUFlI0p0ua8epO2J0eSvs/eqm8r2IFPMVIQOVIsDqxCtbNccB49FsLBUaVenUoBkFWm6VKJuMjJk0s2o1IFvCTMPSQ4sbo7utSTd1KGpSpR0yMO8aWYd4PK0zH4MYhUqL1WV0qBh7yo6tYnsIWeLU4iU21Juz/a/T7HtUuFjBJxSuv3t1+PR3LWIicJ6IiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAJW7X2LSxI64sw9moNGHZ4yyiWjJxd47lZwjNWkro+T9L/R7WqjMiqzj/5EsC1vzIdQfC8+e0eg+OaoVbDVhrxyPb42n6aidP4tv1JM5FwSj6G1+58OwHo8rUwGbDuf5bjyveXNbo7V0VMNVUAWHVvPrETWPiE47RRlLwyEt5M+VYboPiXFyhXuZkH0vN9HoTiibFEA7S4+wM+nRIfiNV9iY+GUV3+Zx+y+gtNXFTEEOwtamotTHjfVvlOh2rQIpZqSjPSG9pLb3lUjKOzMpK/uk+JyTrTm7yZ2QoQgrRVjl9s5RiMFjFGhfdO9/crIVp35Wzuv806OkvVyta9rMALA342HYdZWbT2cauDrYZNDkZKZ/KbZqRH6TlH7Z5RxYepQxFyKdajkAPAO2V0uO0jMPEW5w/MkuxC8rb7/ANFtSqBhdTcAlb96mxHxEzkTDECrUQfw1LfruD80J85LlGjVO4iIkEiIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiR8RjUp6M2tr5Rq1u2w4Dv4TVTxVR/Yp5R2udfEBbgj90mzKuSJS+0fAfUyixeKSnRqoBrRqM4GgGYFa1MC/bnQDwPZLenScNdmU3AFlUraxvzJvxM+WbaFavtDFUabM4V6YyjhmFNePK4v9JvQpqc7NmHEVHCN0j6XQdWrrUU6VcPfuOUhl87O0sZxHR7o9iFNN69RhkOUIGIshXLoRw5fCdWdnL+er/+tX/2lasIxdk7l6UpNXasTIkFtnn3a9ZfOm399TPPV649msrfrp6/FGUfKZ2Xc0u+xPiQBjKif82lp+emS481IDfAGS6FdXGZGBHC4+Y8ZDTRKaZsiIkEiIiAIiIAiIgCInl4B7E8zRAPYiIAiIgCIiAIiIAiIgCIiAJC2zUdcPValYOEJUnke2TZjVF1N+wyVuQ1dFVsFaTIHQ5jzLaurcww5N2317zLecPgtkpVBscrAsinraWNgAVZXAFuCuB3SfS2fi6ZGSs1ibXFXef2ddCfLeTepTSluYQm8VodTKqnsunTxbV1UBqq5W73Xg3iV0/aJCpPj8wBZLEXu9AaHsJpVz/dmvGY/FqVutDR165FdFN9LAkG5N7TOMWnZMtKSau1sNv9IVpY7CYUAlqj5nN7BVYMieN25fwmdNOD25gq1bG4Wtu0FWm1gQ1RVqLxCNnUEgHraajWdQDjDyw6+dZvssmcVZCEnlK5aRKTEUsZcXrKAf8A6aSAjxatUI+Cw+zXZfxcTWbmVzKg/sBTJ+Mpj+ZfJ9ifj8bTp6O4BPBOLN+lBqfKVvRrECq9ZxoCUGS4NrA6m2hY8yOwDlKXa9FKKMKaBb+0bC5/VYdb91z3zZ6PGJNW5v1VJPfdh9p1cnGi5HPzW6qidpEROM6xETwmAexeYFpjmk2BsvPC015pjmk2IubS0xzTXmnheWURc2Xias8RiLkuJgGnuaUsSZRMc0ZosDKJ5eLyAexPLz28ARF4gCIiAJjU9k+BmU14g2Rv0n6SVuQzj+j9T+8T8zOnZ+r5j6i04ro5W6x8/rOobEqQQGBIK3APDXn2Tv4iHmOWhNYFteVW3sNvjQp3A/HFQ3Ct1UVibXGhvaxGok7egHXwvIe0KpFbDntrMh/dTc/4ZyRTUjeo042ZPL3qhfyoWPixsPo03FpTVK+7fEVLZjdFC5gBlUAC55dZjKSt08pU9KiMWPuoD1SNCpZjZjfmLeEsqMpelFHWjH1M6zFPYp3vb/xY/aaq76nssNZwe0fSIuZAmGqEq5Yh2y26rLY6G3H5Typ6QkbjQdc1rm9Nhbnl1ufMTRcPNdDN8VT7ltt8XU/TTlMfRuda3gv1Y/eV2K2lQqIctRM3AANc3IuL37pO9HLWav8At+pnVVVqDRzwknXizuiZiWmsvMC881RPSubS8xLTSakwLyyiQ5G4vMS80GpMTVllErkSC8xLyOakwNWWwIyJOeYl5FarPDVllArkSt5EgmtEnAjMuM8Z5FFWe72ZYGmRKzz0PIm9jexgTkTM8ZpEFSN5IwGRLzT3PIgqT3eRgMiVnnueRN5G9kYE5EvPGeRRUnueMBkSg01Yypak5/gY/IzXnmrFP+G/6G+hhR1Deh8uw21chu1N3UVC1QJvB1BrYkDQeevZLV+kmGqj8JchuBwVQQbXU5bXAHIgcjacg7UVcmpUqLnqnOiWylTYC+YciVI878pq2XsqtWclAG0BQGyMbkDUg6Nx07jbSetNJy1PEjOSVkdxjOkgoui0a7OF0enUUPw4kPoTrpxkOv0veqylhbK28CA2W4Ui1rXOp4k+QnJI6rdGBDJ1WDWzA9jd+nHhN+EbOcpADXsOPDkQeffaTGlDQh1qhe1OkmIWk9SnTVKRYBnXmxb2iTcXNtbWvKvaC4h8q9QFgCAAhazHQaa8O3u01EitS3nV1Ivouvbe9vHWXfRzadPB56NXDgswurgg5xfUEE6La+oHxkNY+lBSzfmZSV8CEA/ED1AGz0yDemNMrXUgFiLkcR1hprN2zuj+IxDZKLjMqFyDlY2005C/W4d8tsbtdMQGUJlFPmCbZ24Zu0AHLw9/4QaW3KtMLTpMEQDUIFLuzizOzkFixueHDQC0jzNabi0E9dinytQdFrhuGYAi2tzcNmsRbvsRx8e89GNcE1rG/VTs4Zn7P9aTg9uU61VT1c4UEsCTcHQKSxN2vqOydf6MLIaqg36i3PK+dr2v/rwkVb4OPvoXof5Iv3sfSGeYNUkVqs1tVnEoHpuZJarMGqyI1aamrS6plHMmGrMGqyEa8wNaaKmVcybvZiasgtXmBrS2BXMnmrMDWkE1pg9aSoFXMmb+JW76eS+BXmHQLXmW+lOmIm0YiZOma5lnvo30rPWO+PWO+RyyeYWm+jfSr9Y7576xHLHMLQV57v5V+sR6xHLHMLTfz3fyq9YnvrEjlDmFrv56K8qxiJ6MRI5ZPMLUVpjXq9Rv0t9DK4YievX0PgfpI5Y5h8hfAPWLmm4VkqtxFwRYcxqDrx75rx1LE0mO8NSqLls6MWUMRxCcbk2voZZ7KH4lb/uf4Vk5bBtNBnv8TOyML3fvc8xySSOZxrPWyOqlGFqZqEWDBjqDfS/YJbJh6uHKNvEqq4KirT4G2jB0P18Je1aS1lanUvlbQ2JB48QeRBnPYzZtakWRl3tPKxp1WJst7Ehsg6raDW1tOIhpxdyd0WzbUdKI3Zph2Vl3ioquoJOgP5iLXPcJzlOq7PfI7MOLtysCNL/blMdjYKrWqCkBYm5JZmbLYXJPfof62nc0uhtOwz1qjaWJAVb/ACkZLcKEpHHEhQwTTrM5F+LFlJPf7VvjJajOQEAJt7RFkFza5drBRr263nVYnoxh0CimoW2hJuzMLEkljzvaUv8AwzFUixQ0SMhQEk3YHutYWBPYZZS00EqbT1KzGYBkXQ53YkuoH4YIbQZiLlRbiLXuOUvvRu2Vq1h3eeYk2+MgVWemXCAIrJu24M5Fre1ZQvPgD334yR0GYq1W/A3t/OZEo+UU5WmjvWrzS1eQnrzS1eZqB1uoTmrzU1eQmrzU1aaKBR1Cc1aYGtIBrTE1ZZQKZk7fTE15BNaYmtJxGZONaanrSI1aaWrSyiUcyWa09lfvYk4lcyzXETcuJlItabFryMCeYXPrEesSpFeN/IwJzLb1iPWJU7+N/GAzLb1iPWJVb+eb+MBmW3rE99YlTv57v4wHMLb1iZesSn9YmXrEjAnmFwMRMvWJTDETMYiRgW5hzGzms9XvqW/8RJZfUeUg4Y2L/wDdP2m+o2omkFoccpa2LOlV1+cs8PiBoCbX0vZiPPKCfOUNOprJiYhRa9WmL3vqxKkcqgW+W/KJWReDLLZuDpJWzoCGe/C2VTbsuCB8bay02Z0exLpva2JFNbFuqEN1tcG5AFtb6zmau0kRbqWdmG76iVCVLadYsgGXXWzc5sxvSF/VVo16VlzqtkdlzIqMAr8RbQHTXSc1RSfoZ0RlBepe/wBCfjtq00JQ4ilVI1DUyuvu2YE9VufYdeGl9WJrhl6rAgjQggj/AH7pz1JsMj58jEEBzkvTta4NgWbXrDw85KoqtNbU0WnfrFQF4kag358vpNYRZnOdyHtWs4HUQNpa+crbt6tutcd+kk9EqijPlzAa6Na973PDlI2MfSY9HKhBcHSxI4+Eu46mMZanVtXmpq8hNWmtq0nE0cyY1aYGrIhqzA1JNiuZLNTvmO8kXeTwvJsRkSs88NSRc88LxYjIktVmtqk0F5iXkkORu3kSNniLEZGwVJkKkRIBkKs93sRBNxvY3sRAuN7G9MRAue70xvZ7EC55vZ7vYiCbjfTIVp5EElA9WxPfV/xqJuxVezAd39J7ER9KMZ9SQlSTqlF6YBZSMwDDVSLeRv8AKIkSeqRaCumzUON7ueeXO9vIE2EydswtqOdgeHZqIiLIsm7GBamfZQh9Q7kJY62AW2vBRcnu7JFxe06dMneBuAIVLEk682sANDrETOcnGDaLwWU0mRcW+bKNRextpcc9SNI2G9mYa8zqSSdRqSYiT/siq2ZbGpMS8RNSlzzPPM8RJB5mjPEQDwvMS8RBDMTUmtq0RCKtms4gRESbFbn/2Q=="
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Get Water</h5>
+                            <p class="card-text">Because Water is Life</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIQlKmMGW9RrmizsrsQy-MDQ4OL8I0Zmsw7w&s"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">help us</h5>
+                            <p class="card-text">because we need help</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/France_road_sign_AB4.svg/1200px-France_road_sign_AB4.svg.png"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Stop deflorestation</h5>
+                            <p class="card-text">Because u can stop</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- ========== BOOTSTRAP JS ========== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
