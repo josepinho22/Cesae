@@ -2,21 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- Ensures proper scaling on mobile and correct viewport width -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- ========== Fonts and Icons ========== -->
-  <!-- Preconnect helps browsers fetch Google Fonts faster -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Load two main font families (Poppins + Roboto Condensed) -->
   <link 
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" 
     rel="stylesheet"
   >
 
-  <!-- Load Font Awesome for icons (GitHub, LinkedIn, Email) -->
   <link 
     rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
@@ -25,13 +21,10 @@
   >
 
   <!-- ========== Stylesheets ========== -->
-  <!-- Global styles for site-wide layout and theme -->
   <link rel="stylesheet" href="../styles.css">
 
-  <!-- Page-specific styles for this portfolio page -->
   <link rel="stylesheet" href="../pages/portfolio.css">
 
-  <!-- Favicon (small icon on browser tab) -->
   <link rel="icon" type="image/x-icon" href="../images/favicon.png">
 
   <title>Portfolio – José Vaz Pinho</title>
@@ -39,32 +32,23 @@
 
 <body>
   <!-- ========== NAVIGATION BAR ========== -->
-  <!-- Semantic <nav> helps users and search engines identify main site navigation -->
   <nav>
-    <!-- Left side: brand / home link -->
     <div class="left">
-      <!-- Link to homepage -->
       <a href="../index.html">José Vaz Pinho</a>
     </div>
 
-    <!-- Right side: external profile and contact links -->
     <div class="right">
-      <!-- Each link uses target="_blank" to open in a new tab -->
-      <!-- rel="noopener noreferrer" improves security and privacy -->
 
-      <!-- GitHub -->
       <a href="https://github.com/josepinho22" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-github" aria-hidden="true"></i>
         <span>Github</span>
       </a>
 
-      <!-- LinkedIn -->
       <a href="https://www.linkedin.com/in/josé-pinho-a71834293" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-square-linkedin" aria-hidden="true"></i>
         <span>Linkedin</span>
       </a>
 
-      <!-- Email -->
       <a href="mailto:pinho.jose251@gmail.com" target="_blank" rel="noopener noreferrer">
         <i class="fa-solid fa-envelope" aria-hidden="true"></i>
         <span>Email</span>
@@ -74,19 +58,14 @@
 
   <!-- ========== MAIN CONTENT ========== -->
   <main>
-    <!-- Projects section (main focus of the page) -->
     <section id="projects" class="projects-section">
-      <!-- Section heading -->
       <h2>Projects</h2>
 
-      <!-- Short introduction -->
       <p class="intro">Some things I’ve built. Click a card to see screenshots.</p>
 
-      <!-- List of project cards -->
       <ul class="projects-grid" role="list">
         
         <!-- ===== Single Project Card ===== -->
-        <!-- Each project is one <li> with image, description, and tags -->
         <li class="project-card" data-tags="HTML,CSS,JavaScript,Vue">
           
           <!-- Clickable thumbnail (links to the project details page) -->
@@ -100,19 +79,15 @@
             >
           </a>
 
-          <!-- Card content below the image -->
           <div class="content">
-            <!-- Project title -->
             <h3 class="title">
               <a href="projects/confessional.html">Confessional</a>
             </h3>
 
-            <!-- Short project description -->
             <p class="desc">
               Anonymous confessions app with a minimalist UI and smooth interactions.
             </p>
 
-            <!-- Tech stack tags (helps future filtering) -->
             <ul class="tags" role="list">
               <li>HTML</li>
               <li>CSS</li>
@@ -120,11 +95,9 @@
               <li>Vue</li>
             </ul>
 
-            <!-- Read more link -->
             <a href="projects/confessional.html" class="read-more-btn">Read More</a>
           </div>
         </li>
-        <!-- ===== /End Project Card ===== -->
 
       </ul>
     </section>

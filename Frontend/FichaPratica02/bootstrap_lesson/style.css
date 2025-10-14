@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===================== SECTION: HERO ===================== */
+
+.hero-section {
+  height: calc(100vh - 56px);
+  display: flex;
+  align-items: center;
+}
+
+.hero-section .text {
+  flex: 2;
+  display: flex;
+  justify-content: left;
+}
+
+.hero-section .content .text h2 {
+  font-size: 45px;
+}
+
+.photo .hero-section  {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+
+.photo .hero-headshot {
+  width: 350px;                 
+  height: 350px;
+  border-radius: 50%;           
+  background-image: url('/FichaPratica02/images/hero-headshot.png'); 
+  background-position: center top;
+  background-size: cover;       
+  background-position: center;  
+  border: 3px solid #fff;       
+  box-shadow: 0 0 8px rgba(0,0,0,0.2); 
+}
