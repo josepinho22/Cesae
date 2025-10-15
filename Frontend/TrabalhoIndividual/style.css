@@ -1,0 +1,83 @@
+/* === NAVBAR === */
+.navbar {
+  position: absolute;
+  /* sits on top of hero image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  /* above background and text */
+  background-color: transparent !important;
+  /* transparent */
+}
+
+/* === HERO SECTION === */
+#hero-section {
+  position: relative;
+  /* natural flow (not absolute!) */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+  /* base layer */
+}
+
+/* background image sits *inside* hero section */
+#hero-section .bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  /*filter: brightness(0.6); */
+  z-index: -1;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+  z-index: 1;
+}
+
+.text h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+/* === REMOTE SECTION === */
+#remote-section {
+  height: 40vh;
+  background-color: rgba(180, 155, 44, 0.25);
+}
+
+#remote-section #slogan {
+  font-size: 100;
+}
+
+#remote-section .lista {
+  list-style-type: none;
+}
+
+.corner-only-left {
+  background:
+    linear-gradient(to right, black 10px, transparent 4px) 0 0,
+    linear-gradient(to bottom, black 10px, transparent 4px) 0 0;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+}
+
+.corner-only-right {
+  background:
+    linear-gradient(to left, black 10px, transparent 4px) 100% 100%,
+    linear-gradient(to top, black 10px, transparent 4px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+}
