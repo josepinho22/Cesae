@@ -1,20 +1,5 @@
-/* ================== BASE ================== */
-:root{
-  --brand-tint: rgba(180, 155, 44, 0.25);
-  --dark: #1E1E1E;
-  --light: #FFFFFF;
-}
-
-* { box-sizing: border-box; }
-
-body {
-  font-family: "Jura", sans-serif;
-  font-weight: 700;
-  margin: 0;
-}
-
-/* ================== NAVBAR ================== */
-.navbar-transparent {
+/* === NAVBAR === */
+.navbar {
   position: absolute;
   top: 0;
   left: 0;
@@ -53,7 +38,7 @@ body {
   z-index: 1;
 }
 
-#hero-section .text h2 {
+.text h2 {
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 5px;
@@ -61,7 +46,8 @@ body {
 
 /* ================== REMOTE ================== */
 #remote-section {
-  background-color: var(--brand-tint);
+  height: 40vh;
+  background-color: rgba(180, 155, 44, 0.25);
 }
 
 #remote-section #slogan {
@@ -69,9 +55,7 @@ body {
 }
 
 #remote-section .lista {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
+  list-style-type: none;
 }
 
 .corner-only-left {
@@ -88,28 +72,4 @@ body {
     linear-gradient(to top, black 10px, transparent 4px) 100% 100%;
   background-repeat: no-repeat;
   background-size: 40px 40px;
-}
-
-/* ================== ACCOMMODATION ================== */
-#accommodation-section {
-  background-color: var(--dark);
-}
-
-#accommodation-section .section-text {
-  color: var(--light);
-}
-
-/* ================== PLACES ================== */
-#places-section,
-#places-section-2 {
-  background-color: var(--brand-tint);
-}
-
-#places-section .section-text,
-#places-section-2 .section-text {
-  color: var(--dark);
-}
-
-.border-left {
-  border-left: 0;
 }
