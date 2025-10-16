@@ -1,69 +1,77 @@
-/* === NAVBAR === */
-.navbar {
+/* ================== BASE ================== */
+:root{
+  --brand-tint: rgba(180, 155, 44, 0.25);
+  --dark: #1E1E1E;
+  --light: #FFFFFF;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: "Jura", sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* ================== NAVBAR ================== */
+.navbar-transparent {
   position: absolute;
-  /* sits on top of hero image */
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
-  /* above background and text */
   background-color: transparent !important;
-  /* transparent */
 }
 
-/* === HERO SECTION === */
+/* ================== HERO ================== */
 #hero-section {
   position: relative;
-  /* natural flow (not absolute!) */
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   z-index: 0;
-  /* base layer */
 }
 
-/* background image sits *inside* hero section */
 #hero-section .bg-img {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  /*filter: brightness(0.6); */
   z-index: -1;
 }
 
-.text {
+#hero-section .text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
+  color: var(--light);
   line-height: 1.8;
   letter-spacing: 0.3px;
   z-index: 1;
 }
 
-.text h2 {
+#hero-section .text h2 {
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 5px;
 }
 
-/* === REMOTE SECTION === */
+/* ================== REMOTE ================== */
 #remote-section {
-  height: 40vh;
-  background-color: rgba(180, 155, 44, 0.25);
+  background-color: var(--brand-tint);
 }
 
 #remote-section #slogan {
-  font-size: 100;
+  font-size: 43px; /* was '100' without unit */
 }
 
 #remote-section .lista {
-  list-style-type: none;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 .corner-only-left {
@@ -80,4 +88,28 @@
     linear-gradient(to top, black 10px, transparent 4px) 100% 100%;
   background-repeat: no-repeat;
   background-size: 40px 40px;
+}
+
+/* ================== ACCOMMODATION ================== */
+#accommodation-section {
+  background-color: var(--dark);
+}
+
+#accommodation-section .section-text {
+  color: var(--light);
+}
+
+/* ================== PLACES ================== */
+#places-section,
+#places-section-2 {
+  background-color: var(--brand-tint);
+}
+
+#places-section .section-text,
+#places-section-2 .section-text {
+  color: var(--dark);
+}
+
+.border-left {
+  border-left: 0;
 }
