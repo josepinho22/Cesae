@@ -12,8 +12,9 @@ public class Ex05 {
         choice = input.nextInt();
 
         System.out.print("Introduza uma mensagem: ");
+        input.nextLine();
         message = input.nextLine();
-         //Needs update because is skipping line
+         //Needs update because it's skipping line
 
 
         for (int i = 0; i < choice; i++) {

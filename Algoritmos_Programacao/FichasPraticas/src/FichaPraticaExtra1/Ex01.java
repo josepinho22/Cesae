@@ -1,9 +1,12 @@
-package FichaPratica03;
+package FichaPraticaExtra1;
 
 public class Ex01 {
     public static void main(String[] args) {
-        for (int i = 1; i <= 500; i++) {
+        for (int i = 1; i <= 250; i++) {
             System.out.println(i);
         }
+
+
     }
+
 }

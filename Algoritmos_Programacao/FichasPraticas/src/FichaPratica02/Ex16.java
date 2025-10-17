@@ -10,6 +10,8 @@ public class Ex16 {
         int choice = input.nextInt();
         int bill200 = 0, bill100 = 0, bill50 = 0, bill20 = 0, bill10 = 0, bill5 = 0;
 
+        System.out.println(choice);
+
         if (choice >= 200) {
             bill200 = choice / 200;
             choice = choice % 200;
@@ -43,6 +45,5 @@ public class Ex16 {
             choice = choice % 5;
             System.out.println("Notas de 5€: " + bill5);
         }
-
     }
 }

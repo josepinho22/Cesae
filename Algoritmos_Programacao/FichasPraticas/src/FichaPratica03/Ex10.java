@@ -2,7 +2,7 @@ package FichaPratica03;
 
 import java.util.Scanner;
 
-public class Ex08 {
+public class Ex10 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int number;
@@ -10,12 +10,9 @@ public class Ex08 {
         System.out.print("Introduza um numero de inicio: ");
         number = input.nextInt();
 
-
-        for (int i = number - 5; i <= number + 5; i++) {
-            if (i != number) {
-                System.out.println(i);
-            } else {
-                System.out.println();
+        for (int i = 2; i <= number; i++) {
+            if (i % 2 == 0){
+            System.out.println(i);
             }
         }
     }

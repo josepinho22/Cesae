@@ -2,20 +2,21 @@ package FichaPratica03;
 
 import java.util.Scanner;
 
-public class Ex08 {
+public class Ex13 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int number;
+        int start, end;
 
         System.out.print("Introduza um numero de inicio: ");
-        number = input.nextInt();
+        start = input.nextInt();
+
+        System.out.print("Introduza um numero de fim: ");
+        end = input.nextInt();
 
 
-        for (int i = number - 5; i <= number + 5; i++) {
-            if (i != number) {
+        for (int i = start; i <= end; i++) {
+            if (i % 5 == 0) {
                 System.out.println(i);
-            } else {
-                System.out.println();
             }
         }
     }

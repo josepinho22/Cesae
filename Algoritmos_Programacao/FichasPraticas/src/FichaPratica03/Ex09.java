@@ -7,18 +7,21 @@ public class Ex09 {
         Scanner input = new Scanner(System.in);
         int number, sum = 0, counter = 0;
         double mean;
-        System.out.print("Introduza um numero: ");
-        number = input.nextInt();
 
 
-        while (number != -1) {
+        do {
             System.out.print("Introduza um numero: ");
             number = input.nextInt();
-            sum += number;
-            counter++;
-        }
+            if (number != -1) {
+                sum += number;
+                counter++;
+            }
 
-        mean = sum / counter;
+        }
+        while (number != -1);
+
+
+        mean = (double) sum / counter;
         System.out.println("Media = " + mean);
 
     }
